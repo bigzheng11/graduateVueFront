@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //    --------------------------面试题--------------------------------
+    //     console.log(
+    //     [1,2,3].map(num=>{
+    //         if(typeof num==="number") return;
+    //         return num*2;
+    //     }))
+    //    --------------------------面试题--------------------------------
+    // console.log("A"-"B"+"2") //NaN2
+    // console.log("A"-"B"+2)   //NaN
+    //    --------------------------面试题--------------------------------
+    // var a = 4 >= 6 || true && 1 || false
+    // console.log(a)
+    //    --------------------------面试题--------------------------------
+    // var a =10.42  取出其中整数部分
+    //    --------------------------面试题--------------------------------
+    console.log(1 + "2" + "2");    //1.字符串的拼接
+    console.log(1 + +"2" + "2");   //2.'32'
+    /*
+    一元操作符以一个加号 + 表示,对number类型的数字不会产生仍和影响
+    但对非数字使用时,会被转换成数值
+    s1='01.1'   +s1 = 1.1
+    s2='z'      +s2 = NaN
+    s3=false    +s3 = 0
+    */
+    console.log("A" - "B" + "2");   //NaN2
+    console.log("A" - 2)            //NaN
+    console.log("A" - "B" + 2);     //NaN
+    /*
+    1."A"首先被转化为number,结果为NaN,"B"也同理
+    2.在计算操作中,如果有一个是NaN,则结果为NaN
+    3.NaN+"2"  =  "NaN2"
+    */
+
+    console.log("22" - 2)//20
+    console.log("22" > 10)//true
+    /*JS是弱类型语言,在 减法 或 比大小 中,如果其中一方是number,另一方也会自动转化成number*/
+    //TODO: NaN:表示某个值不是number
+    //    --------------------------面试题--------------------------------
+    var num1 = parseInt("   01.49")//1
+    var num2 = parseInt("99aa")    //99
+    var num3 = parseInt("aa99")    //NaN
+    console.log(num1)
+    console.log(num2)
+    console.log(num3)
+
+    var num4 = Math.floor("9.99") //9
+    console.log(num4)
+    /*Math.floor  舍弃小数,仅取整数部分*/
+
+    var num5 = Math.ceil("4.4")
+    console.log(num5)      //5
+    /* Math.ceil 直接进一位 */
+
+    var arr1 = "aa,12312,是的哇打算,0oooo".split(",")
+    console.log(arr1)       //["aa","12312","是的哇打算","0oooo"]
+    /* 分割 字符串 */
+    //    --------------------------面试题--------------------------------
+    var ten = 4 >= 6 || true && 1 || false;
+    console.log(ten)
+    //关系运算符 > 逻辑运算符
+    //在逻辑运算符中, ! 的优先级最高,&&的优先级高于||
+</script>
+</body>
+</html>
