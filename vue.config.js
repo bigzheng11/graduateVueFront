@@ -7,7 +7,7 @@ module.exports = defineConfig({
             //设置代理，进行跨域
             "/api": {
                 //↓目标路径
-                target: "http://localhost:8081/", //匹配到要代理的上下文后，将上下
+                target: "http://101.43.132.60:8081/", //匹配到要代理的上下文后，将上下
                 //文前面的地址替换为此代理地址
                 changeOrigin: true, //是否跨域
                 pathRewrite: {
